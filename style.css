@@ -5,15 +5,14 @@
 }
 
 body {
-    color: #fff;
-    background-color: #000;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
 }
-
 
 nav {
     padding: 12px 0 12px 0 ;
     height: 64px;
+    color: #fff;
+    background-color: #000;
 }
 
 .container {
@@ -65,6 +64,8 @@ button {
 .section-01 {
     display: flex;
     justify-content: center;
+    color: #fff;
+    background-color: #000;
 }
 
 .cnt-section-01 {
@@ -73,7 +74,7 @@ button {
     max-width: 1280px;
 }
 
-.content {
+.content-section-01 {
     margin: auto;
 }
 
@@ -108,4 +109,55 @@ input {
     padding: 12px;
     border-radius: 8px;
     margin-top: 24px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+
+.section-02 {
+    display: flex;
+    justify-content: center;
+}
+
+.cnt-section-02 {
+    display: flex;
+    gap: 120px;
+    padding: 64px;
+    max-width: 1280px;
+}
+
+.content-section-02 {
+    margin: auto;
+}
+
+h2 {
+    font-size: 52px;
+    margin-bottom: 32px;
+}
+
+.button-wrapper {
+    margin-top: 20px;
+    display: flex;
+    gap: 24px;
+}
+
+.span-text {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.start-button {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.other-button {
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    border-bottom: 5px solid rgb(203, 203, 203);
+    padding-bottom: 0;
 }
