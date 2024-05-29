@@ -36,29 +36,41 @@ nav .div-01 {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 4px;
+    gap: 8px;
 }
 
-li {
+nav li {
     padding: 10px 12px;
     font-size: 14px;
     font-weight: 500;
-    /* border: 1px solid white; */
     border-radius: 30px;
+
+    transition: .5s;
+}
+
+nav li:hover {
+    cursor: pointer;
+    background-color: #282828;
+}
+
+.title:hover {
+    background-color: #000;
+}
+
+.list-item {
+    display: flex;
+    gap: 8px;
 }
 
 #cadastro-button {
     background-color: #fff;
     color: #000;
+
+    transition: .5s;
 }
 
-button {
-    border: none;
-    background-color: #000;
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
+#cadastro-button:hover {
+    background-color: #F6F6F6;
 }
 
 .section-01 {
@@ -90,7 +102,8 @@ h1 {
     gap: 12px;
 }
 
-label {
+.input-01, .input-02 {
+    display: flex;
     background-color: #fff;
     padding: 12px;
     border-radius: 8px;
@@ -98,6 +111,7 @@ label {
 }
 
 input {
+    outline: none;
     border: none;
     padding: 0 10px;
     max-width: 400px;
@@ -112,6 +126,14 @@ input {
     font-size: 14px;
     font-family: "Inter", sans-serif;
     font-weight: 600;
+    border: none;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.ver-button:hover {
+    background-color: #F6F6F6;
 }
 
 .section-02 {
@@ -147,19 +169,37 @@ h2 {
 }
 
 .start-button {
-    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    padding: 14px 25px;
     border-radius: 8px;
     font-size: 14px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
+    border: none;
+
+    transition: .3s;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #333333;
 }
 
 .other-button {
     background-color: #fff;
     color: #000;
     font-size: 16px;
-    border-bottom: 5px solid rgb(203, 203, 203);
+    border: none;
+    border-bottom: 1px solid rgb(203, 203, 203);
     padding-bottom: 0;
+
+    transition: .2s;
+    cursor: pointer;
+}
+
+.other-button:hover {
+    border-bottom: 1px solid #000;
 }
 
 .section-03 {
@@ -210,4 +250,154 @@ h2 {
     align-items: center;
     padding: 24px;
     background-color: #fff;
+}
+
+footer {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    padding: 64px;
+    width: 100vw;
+    max-width: 1280px;
+}
+
+.div-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.title-02 {
+    font-size: 24px;
+}
+
+.infos {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    text-align: right;
+}
+
+.help {
+    margin-bottom: 72px;
+}
+
+.help span {
+    transition: .2s;
+    cursor: pointer;
+}
+
+.help span:hover {
+    border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 72px;
+}
+
+.lists ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h4 {
+    margin-bottom: 32px;
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+
+.lists li {
+    font-size: 14px;
+    padding: 0;
+
+    transition: .1s;
+    cursor: pointer;
+}
+
+.lists li:hover {
+    color: #4E4E4E;
+}
+
+.div-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logos ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25vw;
+}
+
+.logos li {
+    display: flex;
+    padding: 16px;
+    border-radius: 8px;
+
+    transition: .2s;
+}
+
+.logos li:hover {
+    background-color: #282828;
+}
+
+.local ul {
+    list-style: none;
+    display: flex;
+}
+
+.local li {
+    font-size: 14px;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+    padding: 16px;
+    border-radius: 8px;
+
+    transition: .2s;
+}
+
+.local li:hover {
+    background-color: #282828;
+}
+
+.div-end {
+    margin-top: 100px;
+    font-size: 12px;
+    color: #AFAFAF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.terms ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.terms li {
+    transition: .2s;
+}
+
+.terms li:hover {
+    color: #4E4E4E;
 }
