@@ -131,7 +131,7 @@ input {
 }
 
 h2 {
-    font-size: 52px;
+    font-size: 48px;
     margin-bottom: 32px;
 }
 
@@ -178,4 +178,36 @@ h2 {
     gap: 100px;
     padding: 64px;
     max-width: 1280px;
+}
+
+.section-qrs {
+    display: flex;
+    justify-content: center;
+    color: #000;
+    background-color: #F6F6F6;
+    padding-bottom: 72px;
+}
+
+.cnt-section-qrs {
+    display: flex;
+    flex-direction: column;
+}
+
+.cnt-section-qrs h2 {
+    font-size: 32px;
+    margin-top: 72px;
+    margin-bottom: 52px;
+}
+
+.qrs {
+    display: flex;
+    gap: 36px;
+}
+
+.qr {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding: 24px;
+    background-color: #fff;
 }
